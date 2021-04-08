@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beetask</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <img src="./pit/header.webp" alt="標題">
+            <ul>
+                <li><a href="#">蜜蜂任務</a></li>
+                <li><a href="#">自由選擇</a></li>
+                <li><a href="#">平台優惠</a></li>
+                <li><a href="#">真實心聲</a></li>
+                <li><a href="#">立即加入</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="part1">
+        <div class="container">
+            <img src="./pit/p1-1.webp" alt="背景1" class="bg1">
+            <div class="dbg2">
+                <img src="./pit/p1-2.webp" alt="背景2" class="bg2">
+            </div>
+            <img src="./pit/p1-3.webp" alt="背景3" class="bg3">
+            <a href="#">
+                <img src="./pit/click.webp" alt="點擊加入" class="bg4">
+            </a>
+            <img src="./pit/p1-5.webp" alt="背景5" class="bg5">
+            <img src="./pit/p1-6.webp" alt="背景6" class="bg6">
+        </div>
+    </div>
+
+    <div class="part2">
+        <div class="container">
+            <img src="./pit/p2-1.webp" alt="背景字" class="bg1">
+            <img src="./pit/p2-2.webp" alt="圖片1" class="bg2">
+            <img src="./pit/p2-3.webp" alt="文字敘述1" class="bg3">
+            <img src="./pit/p2-4.webp" alt="文字敘述2" class="bg4">
+            <a href="#">
+                <img src="./pit/click2.webp" alt="點擊加入" class="click">
+            </a>
+        </div>
+    </div>
+
+    <div class="part3">
+        <div class="container">
+            <img src="./pit/p3-1.webp" alt="背景字" class="bg1">
+            <img src="./pit/p3-2.webp" alt="文字敘述1" class="bg2">
+            <img src="./pit/p3-3.webp" alt="圖片1" class="bg3">
+            <img src="./pit/p3-4.webp" alt="圖片2" class="bg4">
+            <img src="./pit/p3-5.webp" alt="圖片3" class="bg5">
+            <img src="./pit/p3-6.webp" alt="圖片4" class="bg6">
+            <a href="#">
+                <img src="./pit/click.webp" alt="點擊加入" class="click">
+            </a>
+        </div>
+    </div>
+
+    <div class="part4">
+        <div class="container">
+            <img src="./pit/p4-1.webp" alt="背景字" class="bg1">
+            <img src="./pit/p4-2.webp" alt="文字敘述1" class="bg2">
+            <img src="./pit/p4-3.webp" alt="文字敘述2" class="bg3">
+            <img src="./pit/p4-4.webp" alt="手機後面的點綴" class="bg4">
+            <div class="bg5">
+                <img src="./pit/p4-5.webp" alt="手機">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url('./pit/Carousels1.webp')">
+                        </div>
+                        <div class="swiper-slide" style="background-image:url('./pit/Carousels2.webp')">
+                        </div>
+                        <div class="swiper-slide" style="background-image:url('./pit/Carousels3.webp')">
+                        </div>
+                        <div class="swiper-slide" style="background-image:url('./pit/Carousels4.webp')">
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-white"></div>
+                </div>
+            </div>
+            <a href="#">
+                <img src="./pit/click2.webp" alt="點擊加入" class="click">
+            </a>
+        </div>
+    </div>
+
+    <div class="part5">
+        <div class="container">
+            <img src="./pit/p5-1.webp" alt="背景字" class="bg1">
+            <img src="./pit/p5-2.webp" alt="文字敘述1" class="bg2">
+            <div class="bg3">
+                <img src="./pit/p5-3.webp" alt="大型圖片">
+            </div>
+            <a href="#">
+                <img src="./pit/click.webp" alt="點擊加入" class="click">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>Copyright © 2021 平台 版權所有 </p>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 50,
+        effect: 'fade',
+        autoplay: {
+            delay: 500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+    });
+</script>
+
+</html>
