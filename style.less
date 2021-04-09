@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header {
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+
+    .container {
+        width: 1226px;
+        height: 100%;
+        margin: 0 auto;
+
+        img {
+            margin-top: 3.5px;
+            float: left;
+        }
+
+        ul {
+            float: right;
+
+            li {
+                float: left;
+                width: 110px;
+                height: 70px;
+                line-height: 70px;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #cccc;
+                        transition: .25s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.part1 {
+    height: 745px;
+    width: 100%;
+    background-color: #FFB01C;
+
+    .container {
+        width: 1226px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+
+        .bg1 {
+            height: 705px;
+            margin-top: 20px;
+            width: 100%;
+            position: absolute;
+            top:0;
+        }
+
+        .dbg2 {
+            width: 560px;
+            height: 142px;
+            position: absolute;
+            top: 200px;
+            left: 300px;
+
+            .bg2 {
+                animation: .8s bounce;
+                transform-origin: top left;
+            }
+        }
+
+        .bg3 {
+            position: absolute;
+            top: 342px;
+            left: 300px;
+        }
+
+        .bg4 {
+            position: absolute;
+            top: 464px;
+            left: 300px;
+        }
+
+        .bg5 {
+            position: absolute;
+            top: 180px;
+            left: 900px;
+        }
+
+        .bg6 {
+            position: absolute;
+            top: 180px;
+            left: 1350px;
+            animation-name: fadeIn;
+            animation-duration: 2s;
+            opacity: .2;
+            animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+        }
+
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(0);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+
+    65% {
+        transform: scale(.85);
+    }
+
+    75% {
+        transform: scale(1);
+    }
+
+    90% {
+        transform: scale(.9);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateX(0px);
+        opacity: .2;
+    }
+
+    to {
+        transform: translateX(-500px);
+        opacity: 1;
+    }
+}
+
+.part2 {
+    height: 745px;
+    width: 100%;
+    background-color: #fff;
+
+    .container {
+        width: 1226px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+
+        .bg1 {
+            position: absolute;
+            top: 80px;
+        }
+
+        .bg2 {
+            position: absolute;
+            top: 180px;
+            left: 100px;
+            animation-name: flip;
+            transform: rotateX(90deg);
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+            transform-origin: left;
+        }
+
+        .bg3 {
+            position: absolute;
+            top: 230px;
+            left: 550px;
+        }
+
+        .bg4 {
+            position: absolute;
+            top: 200px;
+            left: 550px;
+        }
+
+        .click {
+            position: absolute;
+            top: 550px;
+            left: 875px;
+        }
+    }
+}
+
+.part3 {
+    height: 745px;
+    width: 100%;
+    background-color: #FFB01C;
+
+    .container {
+        width: 1226px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+
+        .bg1 {
+            position: absolute;
+            top: 120px;
+            left: 50px;
+        }
+
+        .bg2 {
+            position: absolute;
+            top: 55px;
+            left: 150px;
+        }
+
+        .bg3 {
+            position: absolute;
+            top: 250px;
+            left: 92px;
+            animation-name: flip;
+            transform: rotateX(90deg);
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+            transform-origin: left;
+        }
+
+        .bg4 {
+            position: absolute;
+            top: 250px;
+            left: 360px;
+            animation-name: flip;
+            transform: rotateX(90deg);
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+            transform-origin: left;
+        }
+
+        .bg5 {
+            position: absolute;
+            top: 250px;
+            left: 628px;
+            animation-name: flip;
+            transform: rotateX(90deg);
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+            transform-origin: left;
+        }
+
+        .bg6 {
+            position: absolute;
+            top: 250px;
+            left: 896px;
+            animation-name: flip;
+            transform: rotateX(90deg);
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+            transform-origin: left;
+        }
+
+        .click {
+            position: absolute;
+            top: 620px;
+            left: 950px;
+        }
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(90deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+.part4 {
+    height: 800px;
+    width: 100%;
+    background-color: #fff;
+
+    .container {
+        width: 1226px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+
+        .bg1 {
+            position: absolute;
+            top: 100px;
+            left: -160px;
+        }
+
+        .bg2 {
+            position: absolute;
+            top: 240px;
+            left: 160px;
+            animation: .8s bounce;
+            transform-origin: top left;
+        }
+
+        .bg3 {
+            position: absolute;
+            top: 390px;
+            left: 200px;
+        }
+
+        .bg4 {
+            position: absolute;
+            top: 250px;
+            left: 600px;
+        }
+
+        .bg5 {
+            position: absolute;
+            top: 100px;
+            left: 800px;
+
+            .swiper-container {
+                // width: 300px;
+                // height: 500px;
+                width: 292px;
+                height: 538px;
+                position: absolute;
+                top: 25px;
+                left: 40px;
+            }
+
+            .swiper-slide {
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+
+        .click {
+            position: absolute;
+            top: 530px;
+            left: 200px;
+        }
+    }
+}
+
+.part5 {
+    height: 850px;
+    width: 100%;
+    background-color: #FFB01C;
+
+    .container {
+        width: 1226px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+
+        .bg1 {
+            position: absolute;
+            top: 100px;
+            left: 119px;
+        }
+
+        .bg2 {
+            position: absolute;
+            top: 50px;
+            left: 119px;
+        }
+
+        .bg3 {
+            overflow: hidden;
+            width: 988px;
+            height: 406px;
+            animation-name: leftToRight;
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+            position: absolute;
+            top: 250px;
+            left: 119px;
+        }
+
+        .click {
+            position: absolute;
+            width: 214px;
+            height: 80px;
+            top: 680px;
+            left: 518px;
+        }
+    }
+}
+
+@keyframes leftToRight {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 988px;
+    }
+}
+
+.footer {
+    height: 50px;
+    width: 100%;
+    background-color: #000;
+
+    .container {
+        width: 1226px;
+        height: 100%;
+        margin: 0 auto;
+
+        p {
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+        }
+    }
+}
+
+.anchor {
+    position: fixed;
+    z-index: 9999;
+    height: 50px;
+    top: 100px;
+    right: 100px;
+}
+
+.anchor a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    float: none;
+    border-radius: 50%;
+    // margin: 0 2px;
+    margin: 2px 0;
+    padding: 4px;
+    border: 1px solid transparent;
+    background-clip: content-box;
+}
+
+.anchor a.active,
+.anchor a:hover {
+    border: 1px solid black;
+    padding: 4px;
+}
