@@ -632,6 +632,12 @@
   width: 238px;
   height: 325px;
   margin-right: 20px;
+  animation-name: flip;
+  transform: rotateX(90deg);
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  transform-origin: left;
 }
 @media screen and (max-width: 414px) {
   .part3 .easy {
@@ -649,6 +655,12 @@
   width: 238px;
   height: 325px;
   margin-right: 20px;
+  animation-name: flip;
+  transform: rotateX(90deg);
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  transform-origin: left;
 }
 @media screen and (max-width: 414px) {
   .part3 .convenient {
@@ -666,6 +678,12 @@
   width: 238px;
   height: 325px;
   margin-right: 20px;
+  animation-name: flip;
+  transform: rotateX(90deg);
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  transform-origin: left;
 }
 @media screen and (max-width: 414px) {
   .part3 .quick {
@@ -683,6 +701,12 @@
   width: 238px;
   height: 325px;
   margin-right: 20px;
+  animation-name: flip;
+  transform: rotateX(90deg);
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  transform-origin: left;
 }
 @media screen and (max-width: 414px) {
   .part3 .simple {
