@@ -64,7 +64,7 @@
   display: block;
 }
 .header .menu_btn:before {
-  content: ' ';
+  content: " ";
   position: absolute;
   height: 3px;
   left: 2px;
@@ -80,7 +80,7 @@
   display: none;
 }
 .header nav {
-  width: 80%;
+  width: 60%;
   height: 100vh;
   background: #4a4949;
   position: absolute;
@@ -88,6 +88,7 @@
   left: -100%;
   transition: 0.5s;
   z-index: 1;
+  padding-top: 100px;
 }
 @media screen and (max-width: 767px) {
   .header nav {
@@ -108,9 +109,11 @@
   display: block;
   text-align: center;
   text-decoration: none;
+  margin: 0 auto;
   padding: 20px 0;
   color: white;
-  border-bottom: 1px solid #000;
+  width: 130px;
+  border-bottom: 1px solid #fff;
 }
 .header ul {
   display: none;
@@ -147,27 +150,32 @@
   width: 100%;
   height: 100%;
   max-height: 774px;
+  background: url("pit/p1-1-rotate.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #ffb01c;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  background-position: -12px -30%;
 }
 @media screen and (min-width: 768px) {
   .part1 .container {
     width: 100%;
+    max-width: 2048px;
     height: 100%;
     padding: 90px 0px;
     margin: 0 auto;
     position: relative;
-    background: url("pit/p1-1.webp");
+    background: url("pit/p1-1.png");
     background-color: #ffb01c;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    background-position: center;
+    background-size: contain;
   }
-}
-@media screen and (max-width: 414px) {
 }
 .part1 .container .bg1 {
   height: 100%;
@@ -212,7 +220,7 @@
 @media screen and (min-width: 768px) {
   .part1 .container .bg2 {
     width: 100%;
-    margin: 0 auto ;
+    margin: 0 auto;
     max-width: 560px;
   }
 }
@@ -235,7 +243,7 @@
   height: 80%;
   height: 65px;
   margin: 20px auto;
-  background: url(pit/click.webp);
+  background: url(pit/click.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -263,12 +271,12 @@
 }
 .part1 .container .bg3 {
   width: 70%;
-  margin: 0 auto ;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .part1 .container .bg3 {
     width: 100%;
-    margin: 0 auto ;
+    margin: 0 auto;
     max-width: 498px;
   }
 }
@@ -298,7 +306,7 @@
 @media screen and (min-width: 768px) {
   .part1 .container .bg5 {
     width: 100%;
-    margin: 0 auto ;
+    margin: 0 auto;
     max-width: 435px;
   }
 }
@@ -308,7 +316,7 @@
   margin: 0 auto;
   top: 80px;
   right: 40px;
-  animation-name: fadeleft,fadetop;
+  animation-name: fadeleft, fadetop;
   animation-duration: 1s;
   opacity: 0.2;
   animation-fill-mode: forwards;
@@ -317,7 +325,7 @@
 @media screen and (min-width: 768px) {
   .part1 .container .bg6 {
     width: 100%;
-    margin: 0 auto ;
+    margin: 0 auto;
     position: absolute;
     max-width: 330px;
     top: 40px;
@@ -388,13 +396,15 @@
 }
 @media screen and (min-width: 768px) {
   .part2 {
-    height: 100%;
+    width: 100%;
+    max-width: 2048px;
+    height: 650px;
     background-color: #fff;
     animation-duration: 0s;
   }
 }
 .part2 .container {
-  background: url("pit/p2-1.webp");
+  background: url("pit/p2-1.png");
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -414,15 +424,29 @@
     margin-top: 100px;
   }
 }
-@media screen and (max-width: 414px) {
-}
-.part2 .container .title {
-  background: url(pit/p2-3.webp);
+.part2 .container .title-m {
+  background: url("pit/p2-3.png");
   background-size: contain;
   width: 80%;
   height: 99px;
   background-repeat: no-repeat;
-  /* margin-left: 30px; */
+  animation: 0.8s bounce;
+  transform-origin: bottom;
+  position: absolute;
+  top: 50px;
+  left: 35px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .part2 .container .title-m {
+    display: none;
+  }
+}
+.part2 .container .title {
+  background-size: contain;
+  width: 80%;
+  height: 99px;
+  background-repeat: no-repeat;
   margin: 40px auto;
 }
 @media screen and (min-width: 768px) {
@@ -432,10 +456,11 @@
     position: relative;
     margin-top: 50px;
     margin-right: 60px;
+    background: url("pit/p2-3.png");
   }
 }
 .part2 .container .text {
-  background: url("pit/p2-4.webp");
+  background: url("pit/p2-4.png");
   width: 100%;
   height: 336px;
   bottom: -210px;
@@ -455,7 +480,7 @@
 }
 .part2 .container .clickBtn-2 {
   display: none;
-  background: url("pit/click2.webp");
+  background: url("pit/click2.png");
   width: 195px;
   height: 65px;
   position: absolute;
@@ -466,7 +491,7 @@
 }
 @media screen and (min-width: 768px) {
   .part2 .container .clickBtn-2 {
-    background: url("pit/click2.webp");
+    background: url("pit/click2.png");
     display: block;
     width: 195px;
     height: 65px;
@@ -482,7 +507,7 @@
   height: 80%;
   height: 65px;
   margin: 20px auto;
-  background: url(pit/click.webp);
+  background: url(pit/click.png);
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 160px;
@@ -490,7 +515,7 @@
 @media screen and (min-width: 768px) {
   .part2 .container .clickBtn-M {
     display: none;
-    background: url("pit/click2.webp");
+    background: url("pit/click2.png");
     width: 195px;
     height: 65px;
   }
@@ -550,9 +575,10 @@
 }
 .part3 .container {
   width: 100%;
+  max-width: 2048px;
   height: 100%;
-  background: url("pit/p3-1.webp");
-  background-color: #ffb01c;
+  background: url("pit/p3-1.png");
+  background: url("pit/3fa953_82557861772f44308c4de75388663fa2_mv2.png");
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -573,7 +599,7 @@
   }
 }
 .part3 .title {
-  background: url(pit/p3-2.webp);
+  background: url(pit/p3-2.png);
   background-repeat: no-repeat;
   background-size: contain;
   max-width: 320px;
@@ -626,7 +652,7 @@
   }
 }
 .part3 .easy {
-  background: url("pit/p3-4.webp");
+  background: url("pit/p3-4.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 238px;
@@ -646,10 +672,12 @@
     width: 135px;
     height: 200px;
     margin-top: 5px;
+    animation-name: downToUP;
+    transform-origin: bottom;
   }
 }
 .part3 .convenient {
-  background: url("pit/p3-5.webp");
+  background: url("pit/p3-5.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 238px;
@@ -669,10 +697,12 @@
     width: 135px;
     height: 200px;
     margin-top: 5px;
+    animation-name: downToUP;
+    transform-origin: bottom;
   }
 }
 .part3 .quick {
-  background: url("pit/p3-6.webp");
+  background: url("pit/p3-6.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 238px;
@@ -692,20 +722,24 @@
     width: 135px;
     height: 200px;
     margin-top: 5px;
+    animation-name: downToUP;
+    transform-origin: bottom;
   }
 }
 .part3 .simple {
-  background: url("pit/p3-3.webp");
+  background: url("pit/p3-3.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 238px;
   height: 325px;
   margin-right: 20px;
-  animation-name: flip;
+  animation-name: downToUP;
+  transform-origin: bottom;
   transform: rotateX(90deg);
   animation-duration: 2s;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
+  animation-name: flip;
   transform-origin: left;
 }
 @media screen and (max-width: 414px) {
@@ -715,10 +749,12 @@
     width: 135px;
     height: 200px;
     margin-top: 5px;
+    animation-name: downToUP;
+    transform-origin: bottom;
   }
 }
 .part3 .clickbtn {
-  background: url("pit/click.webp");
+  background: url("pit/click.png");
   background-repeat: no-repeat;
   width: 190px;
   height: 62px;
@@ -731,6 +767,9 @@
     margin: 20px auto;
   }
 }
+.part3 .p3-a {
+  display: block;
+}
 @keyframes flip {
   0% {
     transform: rotateY(90deg);
@@ -742,7 +781,9 @@
 .part4 {
   height: 800px;
   width: 100%;
+  max-width: 2048px;
   background-color: #fff;
+  margin: 0 auto;
 }
 .part4 .container {
   width: 100%;
@@ -753,7 +794,7 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  background: url("pit/p4-1.webp");
+  background: url("pit/p4-1.png");
 }
 @media screen and (min-width: 768px) {
   .part4 .container {
@@ -782,7 +823,7 @@
   width: 155px;
   height: 82px;
   align-self: flex-start;
-  background: url(pit/p4-3.webp);
+  background: url(pit/p4-3.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -797,7 +838,7 @@
   transform-origin: top left;
   width: 303px;
   height: 78px;
-  background: url(pit//p4-2.webp);
+  background: url(pit//p4-2.png);
   background-repeat: no-repeat;
   background-size: contain;
   /* margin-left: 100px; */
@@ -816,7 +857,7 @@
   margin: 0 auto;
   top: 80px;
   left: -100px;
-  background: url("pit/p4-4.webp");
+  background: url("pit/p4-4.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 340px;
@@ -834,7 +875,7 @@
   position: relative;
   width: 192px;
   height: 335px;
-  background: url("pit/p4-5.webp");
+  background: url("pit/p4-5.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -855,7 +896,7 @@
   }
 }
 .part4 .container .clickBtn-M {
-  background: url("pit/click2.webp");
+  background: url("pit/click2.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 123px;
@@ -888,6 +929,7 @@
 }
 .part5 {
   width: 100%;
+  margin: 0 auto;
   background-color: #ffb01c;
 }
 @media screen and (min-width: 768px) {
@@ -912,11 +954,14 @@
     height: 100%;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 }
 .part5 .container-p5 .bg1 {
   position: absolute;
-  background: url("pit/p5-1.webp");
+  background: url("pit/p5-1.png");
   background-repeat: no-repeat;
   background-size: contain;
   top: 100px;
@@ -934,6 +979,8 @@
   /* height: 80%; */
   max-width: 274px;
   max-height: 115px;
+  animation: 0.8s bounce;
+  transform-origin: top left;
 }
 @media screen and (min-width: 768px) {
   .part5 .container-p5 .bg2 {
@@ -951,52 +998,62 @@
   max-height: 42px;
   width: 100%;
   height: 100%;
-  align-self: flex-end;
-  margin: 20px;
+  align-self: center;
+  margin: 50px;
 }
-.part5 .container-p5 .bg3 {
+.part5 .container-p5 .bg-3 {
   overflow: hidden;
   max-width: 309px;
   width: 100%;
   margin: 0 auto;
   height: 125px;
+  transform-origin: left;
   /* margin-left: 50px; */
-  animation-name: leftToRight;
+  animation-name: downToUP;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
+  transform-origin: bottom;
   -webkit-animation-fill-mode: forwards;
-  background: url(pit/p5-3.webp);
+  background: url(pit/p5-3.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 @media screen and (min-width: 768px) {
-  .part5 .container-p5 .bg3 {
+  .part5 .container-p5 .bg-3 {
     max-width: 988px;
     height: 406px;
     position: absolute;
     top: 250px;
     left: 119px;
+    transform-origin: left;
+    animation-name: leftToRight;
   }
 }
 .part5 .container-p5 .click {
   width: 127px;
   height: 42px;
+  align-self: flex-end;
 }
 @media screen and (min-width: 768px) {
   .part5 .container-p5 .click {
-    position: absolute;
     width: 214px;
     height: 80px;
-    top: 680px;
-    left: 518px;
+  }
+}
+@keyframes downToUP {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
   }
 }
 @keyframes leftToRight {
   0% {
-    width: 0;
+    transform: scaleX(0);
   }
   100% {
-    width: 988px;
+    transform: scaleX(1);
   }
 }
 .footer {
@@ -1018,8 +1075,8 @@
   position: fixed;
   z-index: 9999;
   height: 50px;
-  top: 100px;
-  right: 100px;
+  top: 50%;
+  right: 40px;
 }
 @media screen and (max-width: 767px) {
   .anchor {
@@ -1042,6 +1099,16 @@
   visibility: visible;
   opacity: 0;
   transition: visibility 1s 1.5s, opacity 1.5s linear;
+}
+@media screen and (min-width: 375px) {
+  .back-to-top {
+    top: 500px;
+  }
+}
+@media screen and (min-width: 414px) {
+  .back-to-top {
+    top: 600px;
+  }
 }
 .arrow {
   margin: 0 auto;

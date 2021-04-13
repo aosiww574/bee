@@ -1,14 +1,19 @@
 // swiper
 var swiper = new Swiper(".swiper-container", {
   spaceBetween: 50,
-  effect: "fade",
+  speed:2000,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
   autoplay: {
-    delay: 500,
-    disableOnInteraction: false,
+    delay: 2500,
+    disableOnInteraction: true,
   },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    allowTouchMove: true,
   },
 });
 
@@ -42,9 +47,16 @@ jQuery(document).ready(function ($) {
       },
       800);
       $(".clickCircle:nth-child(1)").addClass("active")
-    }else{
+    }else if(window.screen.width==375){
       $('html, body').animate({
-        scrollTop: 768
+        scrollTop: 578
+      },
+      800);
+      $(".clickCircle:nth-child(1)").addClass("active")
+    }
+    else{
+      $('html, body').animate({
+        scrollTop: 790
       },
       800);
       $(".clickCircle:nth-child(1)").addClass("active")
@@ -66,6 +78,12 @@ jQuery(document).ready(function ($) {
       },
       800);
       $(".clickCircle:nth-child(1)").addClass("active")
+    }else if(window.screen.width==375){
+      $('html, body').animate({
+        scrollTop: 1200
+      },
+      800);
+      $(".clickCircle:nth-child(1)").addClass("active")
     }else if(window.screen.width==320){
       $('html, body').animate({
         scrollTop: 1094
@@ -74,7 +92,7 @@ jQuery(document).ready(function ($) {
       $(".clickCircle:nth-child(1)").addClass("active")
     }else{
       $('html, body').animate({
-        scrollTop: 1560
+        scrollTop: 1489
       },
       800);
       $(".clickCircle:nth-child(2)").addClass("active")
@@ -111,7 +129,7 @@ jQuery(document).ready(function ($) {
     }
     else{
       $('html, body').animate({
-        scrollTop: 2305
+        scrollTop: 2296
       },
       800);
       $(".clickCircle:nth-child(3)").addClass("active")
@@ -127,21 +145,20 @@ jQuery(document).ready(function ($) {
       },
       800);
       $(".clickCircle:nth-child(4)")  .addClass("active")
-    }else if(window.screen.width<=375){
+    }else if(window.screen.width==375){
       $('html, body').animate({
-        scrollTop: 1973
+        scrollTop: 2344
       },
       800);
       $(".clickCircle:nth-child(1)").addClass("active")
     }else if(window.screen.width==320){
       $('html, body').animate({
-        scrollTop: 1893
-      },
+        scrollTop: 2363},
       800);
       $(".clickCircle:nth-child(1)").addClass("active")
     }
     else{$('html, body').animate({
-      scrollTop: 3105
+      scrollTop: 3053
     },
     800);
     $(".clickCircle:nth-child(4)")  .addClass("active")
@@ -156,23 +173,23 @@ jQuery(document).ready(function ($) {
       var scrollVal = $(this).scrollTop();
       $("span.qScrollTop").text(scrollVal);
 
-      if (scrollVal > 815 && scrollVal < 1560) {
+      if (scrollVal > 790 && scrollVal < 1489) {
         // console.log('true')
         $(".clickCircle:nth-child(2)").removeClass("active")
         $(".clickCircle:nth-child(3)").removeClass("active")
         $(".clickCircle:nth-child(4)").removeClass("active")
         $(".clickCircle:nth-child(1)").addClass("active")
-      } else if (scrollVal >= 1560 && scrollVal < 2302) {
+      } else if (scrollVal >= 1489 && scrollVal < 2296) {
         $(".clickCircle:nth-child(1)").removeClass("active")
         $(".clickCircle:nth-child(3)").removeClass("active")
         $(".clickCircle:nth-child(4)").removeClass("active")
         $(".clickCircle:nth-child(2)").addClass("active")
-      } else if (scrollVal >= 2303 && scrollVal < 3103) {
+      } else if (scrollVal >= 2296 && scrollVal < 3053) {
         $(".clickCircle:nth-child(1)").removeClass("active")
         $(".clickCircle:nth-child(2)").removeClass("active")
         $(".clickCircle:nth-child(4)").removeClass("active")
         $(".clickCircle:nth-child(3)").addClass("active")
-      } else if (scrollVal >= 3104) {
+      } else if (scrollVal >= 3053) {
         $(".clickCircle:nth-child(1)").removeClass("active")
         $(".clickCircle:nth-child(2)").removeClass("active")
         $(".clickCircle:nth-child(3)").removeClass("active")
