@@ -5,88 +5,329 @@
 }
 .header {
   background-color: #fff;
-  height: 70px;
-  width: 100%;
+  max-width: 100%;
+  position: relative;
 }
 .header .container {
-  width: 1226px;
+  max-width: 1226px;
   height: 100%;
-  margin: 0 auto;
 }
-.header .container img {
-  margin-top: 3.5px;
-  float: left;
+@media screen and (min-width: 768px) {
+  .header .container {
+    width: 1226px;
+    height: 100%;
+    margin: 0 auto;
+  }
 }
-.header .container ul {
-  float: right;
+.header .container .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 66px;
 }
-.header .container ul li {
+@media screen and (min-width: 768px) {
+  .header .container .logo {
+    justify-content: space-between;
+  }
+}
+.header img {
+  width: 50%;
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .header img {
+    width: 100%;
+    max-width: 206px;
+    margin: 10px 0;
+  }
+}
+.header .menu_btn {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  display: block;
+  position: absolute;
+  right: 20px;
+  color: #aaa;
+}
+@media screen and (min-width: 768px) {
+  .header .menu_btn {
+    display: none;
+  }
+}
+.header .menu_btn span {
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  display: block;
+}
+.header .menu_btn:before {
+  content: ' ';
+  position: absolute;
+  height: 3px;
+  left: 2px;
+  width: 36px;
+  top: 0;
+  bottom: 0;
+  background-color: #aaa;
+  margin: auto;
+  box-shadow: 0px 10px 0px #aaa, 0px -10px 0px #aaa;
+}
+.header #menu_control {
+  position: absolute;
+  display: none;
+}
+.header nav {
+  width: 80%;
+  height: 100vh;
+  background: #4a4949;
+  position: absolute;
+  top: 67px;
+  left: -100%;
+  transition: 0.5s;
+  z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  .header nav {
+    top: 67px;
+  }
+}
+@media screen and (min-width: 414px) {
+  .header nav {
+    top: 67px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header nav {
+    top: 67px;
+  }
+}
+.header nav a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 0;
+  color: white;
+  border-bottom: 1px solid #000;
+}
+.header ul {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header ul {
+    display: block;
+    float: right;
+  }
+}
+.header ul li {
   float: left;
   width: 110px;
   height: 70px;
   line-height: 70px;
 }
-.header .container ul li a {
+.header ul li a {
   color: black;
   text-decoration: none;
 }
-.header .container ul li a:hover {
+.header ul li a:hover {
   color: #cccc;
   transition: 0.25s;
 }
 .part1 {
-  height: 745px;
-  width: 100%;
-  background-color: #FFB01C;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .part1 {
+    height: 100%;
+  }
 }
 .part1 .container {
-  width: 1226px;
+  width: 100%;
   height: 100%;
-  margin: 0 auto;
-  position: relative;
+  max-height: 774px;
+  background-color: #ffb01c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .part1 .container {
+    width: 100%;
+    height: 100%;
+    padding: 90px 0px;
+    margin: 0 auto;
+    position: relative;
+    background: url("pit/p1-1.webp");
+    background-color: #ffb01c;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 414px) {
 }
 .part1 .container .bg1 {
-  height: 705px;
-  margin-top: 20px;
+  height: 100%;
   width: 100%;
+  margin-top: 20px;
   position: absolute;
   top: 0;
 }
-.part1 .container .dbg2 {
-  width: 560px;
-  height: 142px;
-  position: absolute;
-  top: 200px;
-  left: 300px;
+.part1 .container .left {
+  margin-left: 0px;
+  position: relative;
 }
-.part1 .container .dbg2 .bg2 {
+@media screen and (min-width: 768px) {
+  .part1 .container .left {
+    margin-left: 150px;
+    max-width: 100%;
+  }
+}
+.part1 .container .dbg2 {
+  height: 112px;
+  max-width: 560px;
+  max-height: 112px;
+  margin-left: 50px;
+  margin-top: 50px;
+  background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .part1 .container .dbg2 {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 560px;
+    height: 112px;
+  }
+}
+.part1 .container .bg2 {
+  width: 90%;
+  margin: 0 auto;
   animation: 0.8s bounce;
   transform-origin: top left;
 }
+@media screen and (min-width: 768px) {
+  .part1 .container .bg2 {
+    width: 100%;
+    margin: 0 auto ;
+    max-width: 560px;
+  }
+}
+.part1 .container .dbg3 {
+  width: 498px;
+  height: 122px;
+  left: 0px;
+}
+@media screen and (max-width: 414px) {
+  .part1 .container .dbg3 {
+    background-size: contain;
+    width: 378px;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+  }
+}
+.part1 .container .clickBtn-M {
+  max-width: 114px;
+  width: 80%;
+  height: 80%;
+  height: 65px;
+  margin: 20px auto;
+  background: url(pit/click.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (min-width: 768px) {
+  .part1 .container .clickBtn-M {
+    display: none;
+    width: 195px;
+    height: 65px;
+  }
+}
+.part1 .container .right {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin: 50px 40px 0 20px;
+}
+@media screen and (min-width: 768px) {
+  .part1 .container .right {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-left: 50px;
+    margin-bottom: 0px;
+  }
+}
 .part1 .container .bg3 {
+  width: 70%;
+  margin: 0 auto ;
+}
+@media screen and (min-width: 768px) {
+  .part1 .container .bg3 {
+    width: 100%;
+    margin: 0 auto ;
+    max-width: 498px;
+  }
+}
+.part1 .container .a_btn {
+  display: block;
   position: absolute;
-  top: 342px;
-  left: 300px;
+  width: 60%;
+}
+@media screen and (min-width: 768px) {
+  .part1 .container .a_btn {
+    display: flex;
+    max-width: 190px;
+  }
 }
 .part1 .container .bg4 {
-  position: absolute;
-  top: 464px;
-  left: 300px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .part1 .container .bg4 {
+    display: block;
+  }
 }
 .part1 .container .bg5 {
-  position: absolute;
-  top: 180px;
-  left: 900px;
+  width: 60%;
+  margin-left: 105px;
+}
+@media screen and (min-width: 768px) {
+  .part1 .container .bg5 {
+    width: 100%;
+    margin: 0 auto ;
+    max-width: 435px;
+  }
 }
 .part1 .container .bg6 {
   position: absolute;
-  top: 180px;
-  left: 1350px;
-  animation-name: fadeIn;
-  animation-duration: 2s;
+  width: 50%;
+  margin: 0 auto;
+  top: 80px;
+  right: 40px;
+  animation-name: fadeleft,fadetop;
+  animation-duration: 1s;
   opacity: 0.2;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
+}
+@media screen and (min-width: 768px) {
+  .part1 .container .bg6 {
+    width: 100%;
+    margin: 0 auto ;
+    position: absolute;
+    max-width: 330px;
+    top: 40px;
+    left: 250px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    opacity: 0.2;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+  }
 }
 @keyframes bounce {
   0% {
@@ -111,45 +352,192 @@
     opacity: 0.2;
   }
   to {
-    transform: translateX(-500px);
+    transform: translateX(-300px);
+    opacity: 1;
+  }
+}
+@keyframes fadeleft {
+  0% {
+    right: -50px;
+    top: -180px;
+    opacity: 0.2;
+  }
+  100% {
+    right: 100px;
+    top: 30px;
     opacity: 1;
   }
 }
 .part2 {
-  height: 745px;
-  width: 100%;
-  background-color: #fff;
-}
-.part2 .container {
-  width: 1226px;
   height: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-.part2 .container .bg1 {
-  position: absolute;
-  top: 80px;
-}
-.part2 .container .bg2 {
-  position: absolute;
-  top: 180px;
-  left: 100px;
-  animation-name: flip;
-  transform: rotateX(90deg);
-  animation-duration: 2s;
+  animation-name: downtoup;
+  animation-duration: 1s;
+  opacity: 0.5;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
-  transform-origin: left;
+}
+@keyframes downtoup {
+  0% {
+    transform: translateY(90px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .part2 {
+    height: 100%;
+    background-color: #fff;
+    animation-duration: 0s;
+  }
+}
+.part2 .container {
+  background: url("pit/p2-1.webp");
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 0px;
+}
+@media screen and (min-width: 768px) {
+  .part2 .container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evently;
+    align-items: flex-start;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 414px) {
+}
+.part2 .container .title {
+  background: url(pit/p2-3.webp);
+  background-size: contain;
+  width: 80%;
+  height: 99px;
+  background-repeat: no-repeat;
+  /* margin-left: 30px; */
+  margin: 40px auto;
+}
+@media screen and (min-width: 768px) {
+  .part2 .container .title {
+    width: 553px;
+    height: 99px;
+    position: relative;
+    margin-top: 50px;
+    margin-right: 60px;
+  }
+}
+.part2 .container .text {
+  background: url("pit/p2-4.webp");
+  width: 100%;
+  height: 336px;
+  bottom: -210px;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+}
+@media screen and (max-width: 414px) {
+  .part2 .container .text {
+    background-size: contain;
+    width: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    bottom: -230px;
+  }
+}
+.part2 .container .clickBtn-2 {
+  display: none;
+  background: url("pit/click2.webp");
+  width: 195px;
+  height: 65px;
+  position: absolute;
+  top: 350px;
+  left: 380px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (min-width: 768px) {
+  .part2 .container .clickBtn-2 {
+    background: url("pit/click2.webp");
+    display: block;
+    width: 195px;
+    height: 65px;
+    position: absolute;
+    top: 350px;
+    left: 380px;
+    background-repeat: no-repeat;
+  }
+}
+.part2 .container .clickBtn-M {
+  max-width: 114px;
+  width: 80%;
+  height: 80%;
+  height: 65px;
+  margin: 20px auto;
+  background: url(pit/click.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 160px;
+}
+@media screen and (min-width: 768px) {
+  .part2 .container .clickBtn-M {
+    display: none;
+    background: url("pit/click2.webp");
+    width: 195px;
+    height: 65px;
+  }
+}
+@media screen and (min-width: 414px) {
+  .part2 .container .clickBtn-M {
+    margin-top: 180px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .part2 .container .clickBtn-M {
+    margin-top: 100px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .part2 .container .clickBtn-M {
+    margin-top: 170px;
+  }
+}
+.part2 .container .bg2 {
+  width: 70%;
+  margin: 0 auto;
+  max-width: 395px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .part2 .container .bg2 {
+    top: 180px;
+    left: 100px;
+    width: 100%;
+    margin: 0 auto;
+    animation-name: flip;
+    transform: rotateX(90deg);
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    transform-origin: left;
+  }
 }
 .part2 .container .bg3 {
-  position: absolute;
-  top: 230px;
-  left: 550px;
+  position: relative;
 }
 .part2 .container .bg4 {
   position: absolute;
-  top: 200px;
-  left: 550px;
+  top: 0;
+  left: 0;
 }
 .part2 .container .click {
   position: absolute;
@@ -157,74 +545,167 @@
   left: 875px;
 }
 .part3 {
-  height: 745px;
+  height: 800px;
   width: 100%;
-  background-color: #FFB01C;
 }
 .part3 .container {
-  width: 1226px;
+  width: 100%;
   height: 100%;
+  background: url("pit/p3-1.webp");
+  background-color: #ffb01c;
   margin: 0 auto;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.part3 .container .bg1 {
-  position: absolute;
-  top: 120px;
-  left: 50px;
+.part3 .container .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1226px;
+  flex-wrap: nowrap;
 }
-.part3 .container .bg2 {
-  position: absolute;
-  top: 55px;
-  left: 150px;
+@media screen and (max-width: 414px) {
+  .part3 .container .content {
+    max-width: 358px;
+    flex-wrap: nowrap;
+  }
 }
-.part3 .container .bg3 {
-  position: absolute;
-  top: 250px;
-  left: 92px;
-  animation-name: flip;
-  transform: rotateX(90deg);
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  transform-origin: left;
+.part3 .title {
+  background: url(pit/p3-2.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 320px;
+  width: 80%;
+  height: 90px;
+  margin: 0 auto;
 }
-.part3 .container .bg4 {
-  position: absolute;
-  top: 250px;
-  left: 360px;
-  animation-name: flip;
-  transform: rotateX(90deg);
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  transform-origin: left;
+@media screen and (min-width: 768px) {
+  .part3 .title {
+    max-width: 498px;
+    width: 80%;
+    height: 190px;
+    align-self: flex-start;
+    justify-content: center;
+    margin-left: 200px;
+  }
 }
-.part3 .container .bg5 {
-  position: absolute;
-  top: 250px;
-  left: 628px;
-  animation-name: flip;
-  transform: rotateX(90deg);
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  transform-origin: left;
+.part3 .up {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 150px;
 }
-.part3 .container .bg6 {
-  position: absolute;
-  top: 250px;
-  left: 896px;
-  animation-name: flip;
-  transform: rotateX(90deg);
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  transform-origin: left;
+@media screen and (min-width: 768px) {
+  .part3 .up {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 100%;
+  }
 }
-.part3 .container .click {
-  position: absolute;
-  top: 620px;
-  left: 950px;
+.part3 .down {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  width: 150px;
+}
+@media screen and (min-width: 768px) {
+  .part3 .down {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+.part3 .easy {
+  background: url("pit/p3-4.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 238px;
+  height: 325px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 414px) {
+  .part3 .easy {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 135px;
+    height: 200px;
+    margin-top: 5px;
+  }
+}
+.part3 .convenient {
+  background: url("pit/p3-5.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 238px;
+  height: 325px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 414px) {
+  .part3 .convenient {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 135px;
+    height: 200px;
+    margin-top: 5px;
+  }
+}
+.part3 .quick {
+  background: url("pit/p3-6.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 238px;
+  height: 325px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 414px) {
+  .part3 .quick {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 135px;
+    height: 200px;
+    margin-top: 5px;
+  }
+}
+.part3 .simple {
+  background: url("pit/p3-3.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 238px;
+  height: 325px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 414px) {
+  .part3 .simple {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 135px;
+    height: 200px;
+    margin-top: 5px;
+  }
+}
+.part3 .clickbtn {
+  background: url("pit/click.webp");
+  background-repeat: no-repeat;
+  width: 190px;
+  height: 62px;
+  align-self: flex-end;
+  margin-top: 50px;
+  margin-right: 180px;
+}
+@media screen and (max-width: 414px) {
+  .part3 .clickbtn {
+    margin: 20px auto;
+  }
 }
 @keyframes flip {
   0% {
@@ -240,93 +721,251 @@
   background-color: #fff;
 }
 .part4 .container {
-  width: 1226px;
-  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
   margin: 0 auto;
-  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background: url("pit/p4-1.webp");
 }
-.part4 .container .bg1 {
-  position: absolute;
-  top: 100px;
-  left: -160px;
+@media screen and (min-width: 768px) {
+  .part4 .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
-.part4 .container .bg2 {
-  position: absolute;
-  top: 240px;
-  left: 160px;
+.part4 .container .text {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .part4 .container .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 600px;
+  }
+}
+.part4 .container .text .bg3 {
+  max-width: 400px;
+  width: 155px;
+  height: 82px;
+  align-self: flex-start;
+  background: url(pit/p4-3.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (min-width: 768px) {
+  .part4 .container .text .bg3 {
+    width: 305px;
+    height: 166px;
+  }
+}
+.part4 .container .bg-2 {
   animation: 0.8s bounce;
   transform-origin: top left;
+  width: 303px;
+  height: 78px;
+  background: url(pit//p4-2.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* margin-left: 100px; */
+  /* margin-top: 40px; */
+  margin: 0px auto;
+  margin-top: 40px;
 }
-.part4 .container .bg3 {
-  position: absolute;
-  top: 390px;
-  left: 200px;
+@media screen and (min-width: 768px) {
+  .part4 .container .bg-2 {
+    width: 455px;
+    height: 158px;
+  }
 }
 .part4 .container .bg4 {
   position: absolute;
-  top: 250px;
-  left: 600px;
+  margin: 0 auto;
+  top: 80px;
+  left: -100px;
+  background: url("pit/p4-4.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 340px;
+  height: 152px;
 }
-.part4 .container .bg5 {
-  position: absolute;
-  top: 100px;
-  left: 800px;
+@media screen and (min-width: 768px) {
+  .part4 .container .bg4 {
+    top: 160px;
+    left: -180px;
+    width: 752px;
+    height: 338px;
+  }
+}
+.part4 .container .phone {
+  position: relative;
+  width: 192px;
+  height: 335px;
+  background: url("pit/p4-5.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (min-width: 768px) {
+  .part4 .container .phone {
+    width: 379px;
+    height: 661px;
+  }
+}
+.part4 .container .click {
+  align-self: flex-start;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .part4 .container .click {
+    margin-left: 100px;
+    display: flex;
+  }
+}
+.part4 .container .clickBtn-M {
+  background: url("pit/click2.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 123px;
+  height: 42px;
+  margin: 30px auto;
+}
+@media screen and (min-width: 768px) {
+  .part4 .container .clickBtn-M {
+    display: none;
+  }
 }
 .part4 .container .bg5 .swiper-container {
-  width: 292px;
-  height: 538px;
+  width: 148px;
+  height: 272px;
   position: absolute;
-  top: 25px;
-  left: 40px;
+  top: 15px;
+  left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .part4 .container .bg5 .swiper-container {
+    width: 292px;
+    height: 538px;
+    top: 20px;
+    left: 40px;
+  }
 }
 .part4 .container .bg5 .swiper-slide {
   background-position: center;
   background-size: cover;
 }
-.part4 .container .click {
-  position: absolute;
-  top: 530px;
-  left: 200px;
-}
 .part5 {
-  height: 850px;
   width: 100%;
-  background-color: #FFB01C;
+  background-color: #ffb01c;
 }
-.part5 .container {
-  width: 1226px;
+@media screen and (min-width: 768px) {
+  .part5 {
+    height: 100%;
+  }
+}
+.part5 .container-p5 {
+  max-width: 1226px;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.part5 .container .bg1 {
+@media screen and (min-width: 768px) {
+  .part5 .container-p5 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+.part5 .container-p5 .bg1 {
   position: absolute;
+  background: url("pit/p5-1.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
   top: 100px;
   left: 119px;
 }
-.part5 .container .bg2 {
-  position: absolute;
-  top: 50px;
-  left: 119px;
+@media screen and (min-width: 768px) {
+  .part5 .container-p5 .bg1 {
+    width: 988px;
+    height: 410px;
+  }
 }
-.part5 .container .bg3 {
+.part5 .container-p5 .bg2 {
+  margin: 0px auto;
+  margin-top: 50px;
+  /* height: 80%; */
+  max-width: 274px;
+  max-height: 115px;
+}
+@media screen and (min-width: 768px) {
+  .part5 .container-p5 .bg2 {
+    max-width: 600px;
+    max-height: 202px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50px;
+    left: 119px;
+  }
+}
+.part5 .container-p5 .clickBtn {
+  max-width: 127px;
+  max-height: 42px;
+  width: 100%;
+  height: 100%;
+  align-self: flex-end;
+  margin: 20px;
+}
+.part5 .container-p5 .bg3 {
   overflow: hidden;
-  width: 988px;
-  height: 406px;
+  max-width: 309px;
+  width: 100%;
+  margin: 0 auto;
+  height: 125px;
+  /* margin-left: 50px; */
   animation-name: leftToRight;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
-  position: absolute;
-  top: 250px;
-  left: 119px;
+  background: url(pit/p5-3.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-.part5 .container .click {
-  position: absolute;
-  width: 214px;
-  height: 80px;
-  top: 680px;
-  left: 518px;
+@media screen and (min-width: 768px) {
+  .part5 .container-p5 .bg3 {
+    max-width: 988px;
+    height: 406px;
+    position: absolute;
+    top: 250px;
+    left: 119px;
+  }
+}
+.part5 .container-p5 .click {
+  width: 127px;
+  height: 42px;
+}
+@media screen and (min-width: 768px) {
+  .part5 .container-p5 .click {
+    position: absolute;
+    width: 214px;
+    height: 80px;
+    top: 680px;
+    left: 518px;
+  }
 }
 @keyframes leftToRight {
   0% {
@@ -341,12 +980,12 @@
   width: 100%;
   background-color: #000;
 }
-.footer .container {
-  width: 1226px;
+.footer .container-ft {
+  width: 100%;
   height: 100%;
   margin: 0 auto;
 }
-.footer .container p {
+.footer .container-ft p {
   text-align: center;
   line-height: 50px;
   color: #fff;
@@ -357,6 +996,33 @@
   height: 50px;
   top: 100px;
   right: 100px;
+}
+@media screen and (max-width: 767px) {
+  .anchor {
+    display: none;
+  }
+}
+.back-to-top {
+  position: fixed;
+  border: 1px solid white;
+  top: 400px;
+  right: 0;
+  background: rgba(216, 215, 215, 0.79);
+  width: 50px;
+  height: 50px;
+  z-index: 10000;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  display: block;
+  visibility: visible;
+  opacity: 0;
+  transition: visibility 1s 1.5s, opacity 1.5s linear;
+}
+.arrow {
+  margin: 0 auto;
+  font-size: 24px;
+  margin-top: 15px;
 }
 .anchor a {
   display: block;

@@ -1,40 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>beetask</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <!-- swiper css -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
 
-<body>
+  <body>
+    
+    <a href="#logo" class="back-to-top"><i class="fas fa-angle-double-up arrow"></i></a>
+
+    <div class="all">
+      
     <div class="anchor">
-        <!-- <a href="#part1" class="clickCircle"></a> -->
+        
         <a href="#part2" class="clickCircle"></a>
         <a href="#part3" class="clickCircle"></a>
         <a href="#part4" class="clickCircle"></a>
         <a href="#part5" class="clickCircle"></a>
     </div>
     <div class="header">
-        <div class="container">
-            <img src="./pit/header.webp" alt="標題">
-            <ul>
-                <li><a href="#part1" id="l1">蜜蜂任務</a></li>
-                <li><a href="#part2" id="l2">自由選擇</a></li>
-                <li><a href="#part3" id="l3">平台優惠</a></li>
-                <li><a href="#part4" id="l4">真實心聲</a></li>
-                <li><a href="#part5" id="l5">立即加入</a></li>
-            </ul>
+      <div class="container">
+        <div class="logo" id="logo">
+          <img src="./pit/header.webp" alt="標題" />
+          <ul>
+            <li><a href="#part1" id="l1">蜜蜂任務</a></li>
+            <li><a href="#part2" id="l2">自由選擇</a></li>
+            <li><a href="#part3" id="l3">平台優惠</a></li>
+            <li><a href="#part4" id="l4">真實心聲</a></li>
+            <li><a href="#part5" id="l5">立即加入</a></li>
+        </ul>
+        <input type="checkbox" name="" id="menu_control" >
+        <label for="menu_control" class="menu_btn">
+          <span>選單</span>
+        </label>
+        <nav class="nv" style="left:-100%;">
+          <a href="#part1" id="l1" class="clickCirclez">蜜蜂任務</a>
+            <a href="#part2" id="l2" class="clickCirclez">自由選擇</a>
+            <a href="#part3" id="l3" class="clickCirclez">平台優惠</a>
+            <a href="#part4" id="l4" class="clickCirclez">真實心聲</a>
+            <a href="#part5" id="l5" class="clickCirclez">立即加入</a>
+        </nav>
         </div>
+      
+      </div>
     </div>
     <div class="part1" id="part1">
-        <div class="container">
-            <img src="./pit/p1-1.webp" alt="背景1" class="bg1">
-            <div class="dbg2">
+      <div class="container">
+        <div class="left">
+          <div class="dbg2">
+            <img src="./pit/p1-2.webp" alt="小蜜蜂任務平台" class="bg2">
+            <img src="./pit/p1-3.webp" alt="背景3" class="bg3">
+            <a href="#" class="a_btn">
+              <img src="./pit/click.webp" alt="點擊加入" class="bg4">
+          </a>
+          </div>
+
+          <!-- <div class="dbg3"></div> -->
+          <!-- <div class="clickBtn"></div> -->
+        </div>
+        <div class="wrap">
+          <div class="right">
+            <!-- <div class="computer"><div class="bee"></div></div> -->
+            <img src="./pit/p1-5.webp" alt="背景5" class="bg5">
+            <img src="./pit/p1-6.webp" alt="背景6" class="bg6">
+          </div>
+          <div class="clickBtn-M"></div>
+        </div>
+        <!-- <img src="./pit/p1-1.webp" alt="背景1" class="bg1"> -->
+        <!-- <div class="dbg2">
                 <img src="./pit/p1-2.webp" alt="背景2" class="bg2">
             </div>
             <img src="./pit/p1-3.webp" alt="背景3" class="bg3">
@@ -42,88 +84,126 @@
                 <img src="./pit/click.webp" alt="點擊加入" class="bg4">
             </a>
             <img src="./pit/p1-5.webp" alt="背景5" class="bg5">
-            <img src="./pit/p1-6.webp" alt="背景6" class="bg6">
-        </div>
+            <img src="./pit/p1-6.webp" alt="背景6" class="bg6">  -->
+      </div>
     </div>
 
     <div class="part2" id="part2">
-        <div class="container">
-            <img src="./pit/p2-1.webp" alt="背景字" class="bg1">
-            <img src="./pit/p2-2.webp" alt="圖片1" class="bg2">
-            <img src="./pit/p2-3.webp" alt="文字敘述1" class="bg3">
-            <img src="./pit/p2-4.webp" alt="文字敘述2" class="bg4">
-            <a href="#">
-                <img src="./pit/click2.webp" alt="點擊加入" class="click">
-            </a>
+      <div class="container">
+        <img src="./pit/p2-2.webp" alt="圖片1" class="bg2" />
+        
+        <div class="title">
+          <div class="text">
+            <div class="clickBtn-2"></div>
+           
+          </div>
+          <div class="clickBtn-M"></div>
         </div>
+        
+        
+      </div>
     </div>
 
     <div class="part3" id="part3">
-        <div class="container">
-            <img src="./pit/p3-1.webp" alt="背景字" class="bg1">
-            <img src="./pit/p3-2.webp" alt="文字敘述1" class="bg2">
-            <img src="./pit/p3-3.webp" alt="圖片1" class="bg3">
-            <img src="./pit/p3-4.webp" alt="圖片2" class="bg4">
-            <img src="./pit/p3-5.webp" alt="圖片3" class="bg5">
-            <img src="./pit/p3-6.webp" alt="圖片4" class="bg6">
-            <a href="#">
-                <img src="./pit/click.webp" alt="點擊加入" class="click">
-            </a>
+      <div class="container">
+        
+        <div class="title"></div>
+        <div class="content">
+          <div class="up">
+            <div class="simple"></div>
+          <div class="easy"></div>
+          </div>
+          <div class="down">
+            <div class="convenient"></div>
+          <div class="quick"></div>
+          </div>
+          
+          
+                 
         </div>
+        <div class="clickbtn"></div>
+        
+      </div>
     </div>
 
     <div class="part4" id="part4">
-        <div class="container">
-            <img src="./pit/p4-1.webp" alt="背景字" class="bg1">
-            <img src="./pit/p4-2.webp" alt="文字敘述1" class="bg2">
-            <img src="./pit/p4-3.webp" alt="文字敘述2" class="bg3">
-            <img src="./pit/p4-4.webp" alt="手機後面的點綴" class="bg4">
-            <div class="bg5">
-                <img src="./pit/p4-5.webp" alt="手機">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="background-image:url('./pit/Carousels1.webp')">
-                        </div>
-                        <div class="swiper-slide" style="background-image:url('./pit/Carousels2.webp')">
-                        </div>
-                        <div class="swiper-slide" style="background-image:url('./pit/Carousels3.webp')">
-                        </div>
-                        <div class="swiper-slide" style="background-image:url('./pit/Carousels4.webp')">
-                        </div>
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination swiper-pagination-white"></div>
-                </div>
-            </div>
-            <a href="#">
-                <img src="./pit/click2.webp" alt="點擊加入" class="click">
-            </a>
+      <div class="container">
+        <!-- <img src="./pit/p4-1.webp" alt="背景字" class="bg1" /> -->
+        <div class="text">
+          <div class="bg-2"></div>
+          <div class="bg3"></div>
+          <!-- <img src="./pit/p4-2.webp" alt="文字敘述1" class="bg2" /> -->
+        <!-- <img src="./pit/p4-3.webp" alt="文字敘述2" class="bg3" /> -->
+        <div class="click">
+          <a href="#">
+            <img src="./pit/click2.webp" alt="點擊加入"/>
+          </a>
         </div>
+        
+        </div>
+        
+        <div class="bg5">
+          
+          <div class="phone">
+            <div class="bg4"></div>
+           
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('./pit/Carousels1.webp')"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('./pit/Carousels2.webp')"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('./pit/Carousels3.webp')"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('./pit/Carousels4.webp')"
+                ></div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination swiper-pagination-white"></div>
+            </div>
+          </div>
+          <div class="clickBtn-M"></div>
+          
+      </div>
     </div>
 
     <div class="part5" id="part5">
-        <div class="container">
-            <img src="./pit/p5-1.webp" alt="背景字" class="bg1">
-            <img src="./pit/p5-2.webp" alt="文字敘述1" class="bg2">
-            <div class="bg3">
-                <img src="./pit/p5-3.webp" alt="大型圖片">
-            </div>
-            <a href="#">
-                <img src="./pit/click.webp" alt="點擊加入" class="click">
-            </a>
+      <div class="container-p5">
+        <div class="bg1"></div>
+        
+        <img src="./pit/p5-2.webp" alt="文字敘述1" class="bg2" />
+        <div class="bg3">
+          
         </div>
+        <div class="clickBtn">
+          <a href="#">
+            <img src="./pit/click.webp" alt="點擊加入" class="click" />
+          </a>
+        </div>
+        
+      </div>
     </div>
 
     <div class="footer">
-        <div class="container">
-            <p>Copyright © 2021 平台 版權所有 </p>
-        </div>
+      <div class="container-ft">
+        <p>Copyright © 2021 平台 版權所有</p>
+      </div>
     </div>
-
-
-</body>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==' crossorigin='anonymous'></script>
-<script src="./all.js"></script>
-
+  </div>
+  </body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./all.js"></script>
 </html>
